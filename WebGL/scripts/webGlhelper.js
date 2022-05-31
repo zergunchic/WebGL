@@ -26,7 +26,7 @@ const canvas = document.querySelector('#glCanvas');
 innerResolution = [canvas.width,canvas.height];
 canvas.addEventListener('mousemove', e => {
 MousePositionX = e.pageX/innerResolution[0];
-MousePositionY = e.pageY/innerResolution[1];
+MousePositionY = 1-e.pageY/innerResolution[1];
 });
 
 // Initialize the GL context
